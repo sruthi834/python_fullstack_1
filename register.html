@@ -1,41 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css">
-
-    <title>Register page</title>
+  <title>Register page</title>
 </head>
 
 <body>
-    <header>Register</header>
-    <main>
-        <h2>Student Registration </h2>
-        <form id="registerForm">
-            <label>Full Name</label><br>
-            <input type="text" placeholder="Enter Your Name" id="name"><br>
-            <label>Email</label><br>
-            <input type="email" placeholder="Enter your email" id="email"><br>
-            <label>Password</label><br>
-            <input type="password" placeholder="Enter Your Password" id="password"><br>
-            <label>Date of Birth</label><br>
-            <input type="date" placeholder="DOB"><br>
-            <label>Gender</label><br>
-            <input type="radio" name="gender">Male
-            <input type="radio" name="gender">Female <br><br>
-            <label>Select Course</label>
-            <br>
-            <select>
-                <option>Python FullStack</option>
-                <option>Java FullStack</option>
-            </select>
-            <br>
-            <button type="submit" value="Register">Register</button>
-        </form>
-    </main>
-    <script src="js/script.js"></script>
+  <header>
+    <h1>Sign-up with NRIIT Learning Management</h1>
+    <p>Learn Practice Get Placed</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="trainers.html">Trainers</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <hr>
+  </header>
+  <main>
+    <h2>Student Registration</h2>
+    <form>
+      <label>Full Name:</label>
+      <input type="text" placeholder="Enter Your Name" required><br><br>
+      <label>Email:</label>
+      <input type="email" placeholder="Enter Your Email" required><br><br>
+      <label>Password:</label>
+      <input type="password" placeholder="Create a Password" required><br><br>
+      <label>Date of Birth:</label>
+      <input type="date"><br><br>
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="male" required> Male
+      <input type="radio" name="gender" value="female" required> Female <br><br>
+      <label>Select Course</label>
+      <select>
+        <option>Python Fullstack</option>
+        <option>Java Fullstack</option>
+        <option>Data Science</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Register">
+    </form>
+  </main>
 </body>
-
 </html>
